@@ -6,15 +6,16 @@ public class Zadanie1 {
         System.out.println("Podaj swój wiek:");
         int age=scanner.nextInt();
 
-        if(age<=0) return;
+        if(age<=0 ) return;
+        if(age>=100) return;
 
-        if(age>=1 && age<18){
+        if(age<18){
             System.out.println("Jesteś dzieckiem.");
-        } else if(age>=18 && age<55){
+        } else if(age<55){
             System.out.println("Jesteś w młodym wieku.");
-        } else if(age>=55 && age<70){
+        } else if(age<70){
             System.out.println("Jesteś w średnim wieku.");
-        } else if(age>=70){
+        } else if(age<100){
             System.out.println("Jesteś w starszym wieku.");
         }
     }
